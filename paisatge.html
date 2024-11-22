@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <a href="./index.html" class="text-4xl">Modern Image Format Experiment</a>
+    </header>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around">
+        <li><a href="./logotip.html" class="text-white">Logotip</a></li>
+        <li><a href="./fotografia.html" class="text-white">Fotografia</a></li>
+        <li><a href="./paisatge.html" class="text-white">Paisatge</a></li>
+        <li><a href="./degradat.html" class="text-white">Degradat</a></li>
+        <li><a href="./animacio.html" class="text-white">Animació</a></li>
+        <li><a href="./avif.html" class="text-white">Avif</a></li>
+        <li><a href="./lighthouse.html" class="text-white">Lighthouse</a></li>
+      </ul>
+    </nav>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <img src="images/paisatge.jpg" alt="Original Image" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/paisatge_80.jpg" alt="JPG 80%" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/paisatge.webp" alt="WebP" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
